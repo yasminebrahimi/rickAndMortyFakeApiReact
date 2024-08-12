@@ -7,7 +7,7 @@ export default function Navbar({ children }) {
   return (
     <nav className="navbar">
       <Logo />
-      {children}
+      {children} 
     </nav>
   );
 }

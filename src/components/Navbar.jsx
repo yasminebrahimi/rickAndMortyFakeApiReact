@@ -7,7 +7,7 @@ export default function Navbar({ children }) {
   return (
     <nav className="navbar">
       <Logo />
-      {children} 
+      {children}
     </nav>
   );
 }
@@ -37,10 +37,7 @@ export function Favourites({ favourites, onDeleteFavourite }) {
 
   return (
     <>
-      <Modal 
-      onOpen={setIsOpen} 
-      open={isOpen} 
-      title="List of Favourites">
+      <Modal onOpen={setIsOpen} open={isOpen} title="List of Favourites">
         {favourites.map((item) => (
           <Character key={item.id} item={item}>
             <button

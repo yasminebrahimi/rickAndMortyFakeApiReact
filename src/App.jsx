@@ -6,7 +6,6 @@ import Navbar, { Favourites, Search, SearchResult } from "./components/Navbar";
 import { Toaster } from "react-hot-toast";
 import useCharacters from "./hooks/useCharacter";
 import useLocalStorage from "./hooks/useLocalStorage";
-import Modal from "./components/Modal";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -44,9 +43,6 @@ function App() {
   return (
     <div className="app">
       <Toaster />
-      {/* <Modal title="modal test" open={} onOpen={}> 
-        this is for testing 
-      </Modal> */}
       <Navbar>
         <Search query={query} setQuery={setQuery} />
         <SearchResult numOfResult={characters.length} />
